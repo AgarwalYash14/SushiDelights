@@ -1,0 +1,100 @@
+.ThirdPage {
+    background-color: #ffd17e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 12vw;
+    gap: 10vw;
+    position: relative;
+    width: auto;
+    /* flex-wrap: wrap; */
+}
+
+.ThirdPage .third_page_img {
+    width: clamp(250px, 40%, 355px);
+}
+
+.ThirdPage img {
+    z-index: 2;
+}
+
+.ThirdPage h1 {
+    font-size: clamp(1.875rem, 1.25rem + 3.125vw, 6.25rem);
+    color: #21243d;
+    font-weight: 700;
+}
+
+.ThirdPage p {
+    font-size: clamp(1.125rem, 0.9911rem + 0.6696vw, 2.0625rem);
+    color: #333242;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.ThirdPage button {
+    border-radius: 33px;
+    background-color: #21243d;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Montserrat";
+    padding: 12px 50px;
+}
+
+.assets {
+    overflow: hidden;
+}
+
+.vector_1_III {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+}
+.vector_2_III {
+    position: absolute;
+    top: 115px;
+    left: 130px;
+    z-index: 1;
+}
+.vector_3_III {
+    position: absolute;
+    top: -80px;
+    left: 0;
+}
+
+.vector_4_III {
+    position: absolute;
+    bottom: 25px;
+    left: 35px;
+}
+.vector_5_III {
+    position: absolute;
+    bottom: 45px;
+    right: -65px;
+}
+@media screen and (max-width: 650px) {
+    .ThirdPage {
+        flex-wrap: wrap;
+    }
+
+    .third_page_img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .vector_2_III {
+        display: none;
+    }
+
+    .vector_3_III {
+        display: none;
+    }
+
+    .vector_5_III {
+        display: none;
+    }
+}

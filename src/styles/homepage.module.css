@@ -1,0 +1,40 @@
+.homepage {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-left: 50px;
+}
+
+.homepage h1 {
+    font-size: clamp(2.5rem, 2.2321rem + 1.3393vw, 4.375rem);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.homepage p {
+    font-size: clamp(1.125rem, 0.875rem + 1.25vw, 2.875rem);
+    color: #ffffff;
+    font-weight: 300;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-right: 45vw;
+}
+
+.homepage button {
+    border-radius: 33px;
+    background-color: #21243d;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Montserrat";
+    padding: 12px 50px;
+}
+
+@media screen and (max-width: 870px) {
+    .homepage p {
+        padding-right: 0;
+        width: 75%;
+    }
+}

@@ -1,0 +1,100 @@
+.FifthPage {
+    background-color: #ffd17e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 12vw;
+    gap: 10vw;
+    position: relative;
+}
+
+.FifthPage img {
+    z-index: 2;
+}
+
+.fifth_page_img {
+    width: 40%;
+}
+
+.FifthPage h1 {
+    font-size: clamp(1.875rem, 1.25rem + 3.125vw, 6.25rem);
+    color: #21243d;
+    font-weight: 700;
+}
+
+.FifthPage p {
+    font-size: clamp(1.125rem, 0.9911rem + 0.6696vw, 2.0625rem);
+    color: #333242;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.FifthPage button {
+    border-radius: 33px;
+    background-color: #21243d;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Montserrat";
+    padding: 12px 50px;
+}
+
+.assets {
+    overflow: hidden;
+}
+
+.vector_1_V {
+    position: absolute;
+    top: 25px;
+    left: 45%;
+    rotate: 90deg;
+}
+.vector_2_V {
+    position: absolute;
+    top: 115px;
+    right: 130px;
+    z-index: 1;
+}
+.vector_3_V {
+    position: absolute;
+    top: -80px;
+    left: 0;
+}
+
+.vector_4_V {
+    position: absolute;
+    bottom: 25px;
+    right: 35px;
+}
+.vector_5_V {
+    position: absolute;
+    bottom: 45px;
+    left: 40%;
+}
+
+@media screen and (max-width: 650px) {
+    .FifthPage {
+        flex-wrap: wrap;
+    }
+
+    .fifth_page_img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .vector_1_V {
+        display: none;
+    }
+
+    .vector_2_V {
+        display: none;
+    }
+
+    .vector_5_V {
+        display: none;
+    }
+}

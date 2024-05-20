@@ -1,0 +1,137 @@
+.FourthPage {
+    background-color: #21243d;
+    padding: 120px 35px;
+    padding-bottom: 225px;
+    position: relative;
+}
+
+.FourthPage > div {
+    z-index: 2;
+}
+
+.FourthPage h1 {
+    font-size: clamp(2rem, 1.75rem + 1.25vw, 3.75rem);
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.FourthPage .text {
+    font-size: clamp(1.1875rem, 1.0893rem + 0.4911vw, 1.875rem);
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+    padding: 40px 0;
+    width: 55%;
+    margin: 0 auto;
+}
+
+.StatsCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.StatsCard h2 {
+    color: #fff;
+    font-size: clamp(3.75rem, 3.6607rem + 0.4464vw, 4.375rem);
+}
+
+.StatsCard p {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    /* padding: 35px; */
+    flex-wrap: wrap;
+}
+
+.Assets {
+    overflow: hidden;
+}
+
+.vector_1 {
+    position: absolute;
+    top: 60px;
+    left: 7vw;
+    z-index: 1;
+}
+
+.vector_2 {
+    position: absolute;
+    top: 60px;
+    right: 7vw;
+    z-index: 1;
+}
+
+.vector_3 {
+    position: absolute;
+    top: 30%;
+    left: 7vw;
+    z-index: 1;
+}
+.vector_4 {
+    position: absolute;
+    bottom: 5%;
+    left: 60%;
+    z-index: 1;
+    rotate: 90deg;
+}
+.vector_5 {
+    position: absolute;
+    bottom: -10%;
+    left: 25%;
+    z-index: 1;
+}
+.vector_6 {
+    position: absolute;
+    bottom: 15%;
+    right: 4vw;
+    z-index: 1;
+}
+
+@media screen and (max-width: 950px) {
+    .vector_1 {
+        display: none;
+    }
+
+    .vector_2 {
+        display: none;
+    }
+
+    .vector_3 {
+        display: none;
+    }
+
+    .vector_4 {
+        display: none;
+    }
+
+    .vector_5 {
+        display: none;
+    }
+
+    .vector_6 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .FourthPage .text {
+        width: 85%;
+    }
+    .StatsCard {
+        height: 220px;
+        width: 220px;
+    }
+}

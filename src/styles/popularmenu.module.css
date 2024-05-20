@@ -1,0 +1,126 @@
+.PopularMenu {
+    background-color: #21243d;
+    padding: 80px 35px;
+    position: relative;
+}
+
+.PopularMenu > div {
+    z-index: 2;
+}
+
+.PopularMenu h1 {
+    font-size: clamp(2rem, 1.75rem + 1.25vw, 3.75rem);
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.PopularMenu .text {
+    font-size: clamp(1.1875rem, 1.0893rem + 0.4911vw, 1.875rem);
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+    padding: 40px 0;
+    width: 55%;
+    margin: 0 auto;
+}
+
+.PopularMenu .menuItems {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    padding: 40px 0;
+    margin: 0 auto;
+}
+
+.PopularMenu .menuItems > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 15px;
+}
+
+.PopularMenu .menuItems h2 {
+    font-size: 20px;
+}
+
+.PopularMenu .menuItems p {
+    font-size: 17px;
+    text-align: center;
+    padding: 0 2vw;
+    width: 300px;
+}
+
+.Assets {
+    overflow: hidden;
+}
+
+.vector_1 {
+    position: absolute;
+    top: -10px;
+    left: 18vw;
+    z-index: 1;
+}
+
+.vector_2 {
+    position: absolute;
+    top: -25px;
+    right: -45px;
+    z-index: 1;
+}
+
+.vector_3 {
+    position: absolute;
+    top: 22%;
+    left: 7vw;
+    z-index: 1;
+}
+.vector_4 {
+    position: absolute;
+    top: 45%;
+    right: -10px;
+    z-index: 1;
+}
+.vector_5 {
+    position: absolute;
+    bottom: 8%;
+    left: -85px;
+    z-index: 1;
+}
+.vector_6 {
+    position: absolute;
+    bottom: 80px;
+    right: 0px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 950px) {
+    .PopularMenu .menuItems {
+        grid-template-columns: repeat(auto-fill, minmax(273px, 1fr));
+    }
+
+    .vector_1 {
+        display: none;
+    }
+
+    .vector_3 {
+        display: none;
+    }
+
+    .vector_4 {
+        display: none;
+    }
+
+    .vector_6 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .PopularMenu .text {
+        width: 85%;
+    }
+}

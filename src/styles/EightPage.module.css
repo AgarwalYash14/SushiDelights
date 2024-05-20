@@ -1,0 +1,53 @@
+.EightPage {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+    row-gap: 100px;
+    flex-wrap: wrap;
+    background-color: #111111;
+    color: #fff;
+    padding: 200px 8vw;
+}
+
+.EightPage h2 {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.EightPage p {
+    max-width: 320px;
+    min-width: 200px;
+}
+
+.EightPageII {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 80px;
+}
+
+.EightPage .SocialMedia {
+    display: flex;
+    padding-top: 25px;
+}
+
+.EightPage .SocialMedia img {
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    height: 33px;
+}
+
+.EightPage ul {
+    list-style: none;
+}
+
+.EightPage ul li {
+    padding: 5px 0;
+}
+
+.EightPage ul li a {
+    text-decoration: none;
+    color: #fff;
+    white-space: nowrap;
+}
